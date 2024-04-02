@@ -14,3 +14,7 @@ pypdf
 langchain_experimental
 text_generation
 spacy
+fastapi
+ctransformers
+sentence-transformers
+langchain-community
