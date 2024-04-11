@@ -30,11 +30,11 @@ app.add_middleware(
 )
 
 # Create index in Pinecone
-index_name = "lawllm"
+index_name = "legal-assistance"
 dimension = 768  # Dimension of Hugging Face embeddings
 
 # Initialize Pinecone connector
-pinecone_store = PineconeConnector(api_key="f2761cc2-2b0e-4179-8967-cd6f36b73be2", index_name=index_name, dimension=dimension)
+pinecone_store = PineconeConnector(api_key="75fe37d6-c675-4c41-8c9f-9a2eab71bc1e", index_name=index_name, dimension=dimension)
 
 # Initialize embedding generator
 embedding_generator = EmbeddingGenerator(model_name="all-MiniLM-L6-v2")
@@ -51,8 +51,7 @@ llm=CTransformers(model='Models/llama-2-7b-chat.Q2_K.gguf',
                               'temperature':0.8, 'gpu_layers':1000})
 template="""
         Answer the following QUESTION based on the CONTEXT
-given. If you do not know the answer and the CONTEXT doesn't
-contain the answer truthfully say "I don't know". And answer in an Html code formate
+given.
 CONTEXT: {context} 
 QUESTION: {question}.
 """
