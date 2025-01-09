@@ -25,7 +25,7 @@ The system is based on the Retrieval-Augmented Generation (RAG) architecture and
    - **GenAI App**: Handles user queries, searches for relevant data, and sends context-enhanced queries to the LLM.
    - **Large Language Model (LLM)**: Provides human-like responses and generates insights based on the provided context.
 
-![System Architecture](https://github.com/nameson2672/law-llm/tree/main/static/system-architecture.png)
+![System Architecture](https://raw.githubusercontent.com/nameson2672/law-llm/refs/heads/main/static/system-architecture.png)
 
 ### Workflow
 1. **Data Preparation**: Client data is ingested and processed to generate embeddings.
